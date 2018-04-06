@@ -6,6 +6,7 @@ import {
   StyleSheet,
   Button
 } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 
 export default class StartPage extends Component {
@@ -22,7 +23,7 @@ export default class StartPage extends Component {
           RippleNative (Ripple Wallet)
         </Text>
         <RkButton onPress={this.createWallet} style={styles.button}>Create Wallet</RkButton>
-        <RkButton onPress={this.openWallet} style={styles.button}>Get the Wallet</RkButton>
+        <RkButton onPress={Actions.MainPage} style={styles.button}>Get the Wallet</RkButton>
       </View>
     );
   }

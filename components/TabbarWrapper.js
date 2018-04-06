@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import StartPage from './StartPage'
+import Balance from './Balance'
+import Send from './Send'
+import History from './History'
 import {
   TabBarIOS,
   View
 } from 'react-native';
 
-type Props = {};
-export default class TabbarWrapper extends Component<Props> {
+export default class TabbarWrapper extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,7 +35,7 @@ export default class TabbarWrapper extends Component<Props> {
               selectedTab: 'balance'
             })
           }}>
-          <StartPage></StartPage>
+          <Balance></Balance>
         </TabBarIOS.Item>
         <TabBarIOS.Item
           selected={this.state.selectedTab === 'send'}
@@ -44,7 +45,7 @@ export default class TabbarWrapper extends Component<Props> {
               selectedTab: 'send'
             })
           }}>
-          <View></View>
+          <Send></Send>
         </TabBarIOS.Item>
         <TabBarIOS.Item
           selected={this.state.selectedTab === 'history'}
@@ -54,7 +55,7 @@ export default class TabbarWrapper extends Component<Props> {
               selectedTab: 'history'
             })
           }}>
-          <View></View>
+          <History></History>
         </TabBarIOS.Item>
       </TabBarIOS>
     )

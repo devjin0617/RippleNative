@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+#target 'RippleNative' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera' 
+  # Pods for RippleNative
+  
+#  target 'RippleNative-tvOSTests' do
+#    inherit! :search_paths
+    # Pods for testing
+#  end
+
+#  target 'RippleNativeTests' do
+#    inherit! :search_paths
+    # Pods for testing
+#  end
+
+#end
+
+#target 'RippleNative-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for RippleNative-tvOS
+
+#  target 'RippleNative-tvOSTests' do
+#    inherit! :search_paths
+    # Pods for testing
+#  end
+
+#end

@@ -5,8 +5,6 @@ import {
   StyleSheet
 } from 'react-native';
 
-import Ripple from '../lib/ripple'
-
 export default class Balance extends Component {
   async componentDidMount () {
     const address = 'rMX46MC7EbTCfJZU6Yy61jwYbLnxvku2PM'

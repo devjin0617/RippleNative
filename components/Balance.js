@@ -4,16 +4,22 @@ import {
   View,
   StyleSheet
 } from 'react-native';
+import QRCode from 'react-native-qrcode';
 
 export default class Balance extends Component {
-  async componentDidMount () {
-    const address = 'rMX46MC7EbTCfJZU6Yy61jwYbLnxvku2PM'
+  state = {
+    address: 'rMX46MC7EbTCfJZU6Yy61jwYbLnxvku2PM'
   }
   render() {
     return (
       <View style={styles.container}>
-        <Text>
-          Balance View!
+        <QRCode
+          value={this.state.address}
+          size={200}
+          bgColor='black'
+          fgColor='white'/>
+        <Text style={styles.text}>
+          {this.state.address}
         </Text>
       </View>
     );
@@ -26,5 +32,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
+  },
+  text: {
+    marginTop: 10
   }
 })

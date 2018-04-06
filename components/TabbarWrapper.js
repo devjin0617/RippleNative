@@ -14,16 +14,6 @@ export default class TabbarWrapper extends Component {
       selectedTab: 'balance'
     };
   }
-  componentDidMount () {
-    this.setState({
-      selectedTab: 'history'
-    });
-  }
-  changeTab () {
-    this.setState({
-      selectedTab: 'history'
-    });
-  }
   render() {
     return (
       <TabBarIOS selectedTab={this.state.selectedTab}>

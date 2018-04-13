@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import Icon from 'react-native-vector-icons/FontAwesome';
 import Balance from './Balance'
 import Send from './Send'
 import History from './History'
